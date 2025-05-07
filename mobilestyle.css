@@ -1,0 +1,102 @@
+@media screen and (min-width: 400px) and (max-width: 991px) {
+  .container {
+    display: flex;
+    padding: 0 0;
+    width: 100%;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 0;
+  }
+  .item{
+    visibility: hidden;
+  }
+  .images{
+    visibility: hidden;
+  }
+  .ContainerMainPage{
+    display: flex;
+    flex-flow: column;
+    font: normal 5px 'Roboto', sans-serif; 
+    height: auto;
+  }
+  .motto{
+    display: flex;
+    padding: 0 0 0 0;
+    text-align: left;
+    align-items: start;
+  }
+  .MottoHeader{
+    font-size: 20px;
+    padding: 100px 0 0 0;
+  }
+  .MottoText{
+    font-size: 20px;
+    padding: 0 0 0 0;
+  }
+  .MottoTextBottom{
+    font-size: 20px;
+    padding: 0 0 0 0;
+  }
+  .ceo{
+    width: 100%;
+  }
+  .CeoPhoto{
+    height: 10%;
+    width: 30%;
+  }
+  .ContainerWays{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;    /* Центрируем по вертикали */
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: rgb(0, 0, 0);
+  }
+  .ContainerWays div{
+    width: 100%;
+    height: 25%;
+    display: flex;          /* Включаем Flexbox */
+    align-items: center;    /* Центрируем по вертикали */
+    justify-content: center; /* Центрируем по горизонтали (опционально) */
+    text-align: center;
+    margin: 10px;
+  }
+  .WaysHeader{
+    padding-top: 5%;
+    width: 100%;
+    font-size: large;
+    font-family: 'Times New Roman', Times, bold;
+  }
+  .ContainerWays > .ContainerWaysHeader{
+    width: 100%;
+    height: 5%;
+    text-align: center;
+  }
+  .FirstWay,
+  .SecondWay,
+  .ThirdWay,
+  .FourWay,
+  .FifthWay,
+  .SixthWay {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(192, 189, 189, 0.7);
+    background-image: linear-gradient(45deg, rgb(40, 75, 168, 0.9), rgb(235, 235, 235, 0.5) 30%);
+    border-radius: 50px;    /* Скругление углов */
+  }
+  .FirstWay > .WaysHeader,
+  .SecondWay > .WaysHeader,
+  .ThirdWay > .WaysHeader,
+  .FourWay > .WaysHeader,
+  .FifthWay > .WaysHeader,
+  .SixthWay > .WaysHeader {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+  }
+}

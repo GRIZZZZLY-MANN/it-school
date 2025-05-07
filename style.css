@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image:  url(back2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Playfair Display';
+}
+
+/* Стили для header */
+header {
+    background-color: rgba(0, 75, 168, 0.8); 
+    color: white;
+    padding: 10px 10px;
+    width: 100%;     /* Растягивает header на всю ширину экрана */
+    position: fixed; /* Фиксирует header на экране */
+    top: 0;          /* Прижимает header к верхней части экрана */
+    left: 0;         /* Прижимает header к левой части экрана */
+    z-index: 1000;   /* Убедитесь, что header находится поверх других элементов */
+}
+
+/* Стили для основного контента */
+main {
+    flex: 1;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 105px;
+}
+/* Стили для footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    padding: 10px 20px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 175px;
+    
+}
+.container a{
+    text-decoration: none;
+}
+.container a:visited{
+    color: #fff;
+}
+.logo{
+    height: 45px;
+    width: 267px;
+}
+.item {
+    display: flex;
+    column-gap: 100px;
+    color: white;
+    list-style: none;
+}
+.ContainerMainPage{
+    width: 100%;
+	height: 880px;
+	display: flex;
+    color: rgb(0, 0, 0);
+    
+}
+.motto{
+    display: flex;
+    width: 70%;
+    height: auto;
+    text-align: center;
+	flex-flow: column;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center;
+    padding-bottom: 200px;
+}
+.MottoText{
+    font-size: 35px;
+    
+    width: 50%;
+    padding-left: 140px;
+}
+.MottoTextBottom{
+    font-size: 35px;
+    
+    padding-top: 80px;
+    padding-left: 370px;
+}
+.MottoHeader{
+    font-size: 35px;
+    
+
+}
+.images{
+    position: relative;
+    list-style: none;
+    bottom: 200px;
+    right: 500px;
+}
+.Element1, .Element2, .Element5{
+    position: absolute;
+}
+.Element1, .Element2{
+    rotate: 180deg;
+    
+}
+.Element1{
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 205px;
+    height: 339px;
+}
+.Element2{
+    width: 370px;
+    height: 336px;
+}
+
+.Element5{
+    left: 760px;
+    top: 10px;
+    width: 370px;
+    height: 336px;
+}
+.ceo{
+    display: flex;
+    width: 30%;
+    height: auto;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: end;
+}
+.CeoPhoto{
+    height: auto;
+    width: auto;
+}
+.ContainerWays{
+    display: flex;
+    width: 100%;
+    height: 700px;
+    align-items: center;    /* Центрируем по вертикали */
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: rgb(0, 0, 0);
+}
+.ContainerWays div{
+    width: 40%;
+    height: 50%;
+    display: flex;          /* Включаем Flexbox */
+    align-items: center;    /* Центрируем по вертикали */
+    justify-content: center; /* Центрируем по горизонтали (опционально) */
+    text-align: center;
+    margin: 10px;
+}
+.WaysHeader{
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+}
+.ContainerWays > .ContainerWaysHeader{
+    width: 100%;
+    height: 5%;
+    text-align: center;
+}
+.FirstWay,
+.SecondWay,
+.ThirdWay,
+.FourWay,
+.FifthWay,
+.SixthWay {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(192, 189, 189, 0.7);
+    background-image: linear-gradient(45deg, rgb(40, 75, 168, 0.9), rgb(235, 235, 235, 0.5) 30%);
+    border-radius: 100px;    /* Скругление углов */
+}
+.WaysText{
+    font-size: 15px;
+}
+.FirstWay > .WaysHeader,
+.SecondWay > .WaysHeader,
+.ThirdWay > .WaysHeader,
+.FourWay > .WaysHeader,
+.FifthWay > .WaysHeader,
+.SixthWay > .WaysHeader {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+.WaysButton{
+    display: flex;
+    flex-flow: column-reverse;
+    order: 1;
+    
+}
+.WaysButton button{
+    width: 200px;           /* Ширина кнопки */
+    height: 67.5px;          /* Высота кнопки */
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
+    text-decoration: none;
+}
+
+.animated-gradient-button {
+    background: linear-gradient(45deg, rgb(235, 235, 235, 0.5), rgb(40, 75, 168, 0.9)); /* Начальный градиент */
+    background-size: 400% 400%;; /* Увеличиваем размер градиента для анимации */
+    cursor: pointer;
+    transition: background 0.5s ease;
+}
+/* Анимация градиента */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.WaysLogo{
+    width: 100px;
+    height: 100px;
+}
+.accordion {
+    transform: translateZ(0);
+    background: white;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accordion>.accordion-toggle {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    border-radius: 50px;
+}
+
+.accordion>label {
+    display: block;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    background: #ecebec;
+    color: #555;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accordion>label:after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    width: 12px;
+    height: 12px;
+    border-left: 2px solid #555;
+    border-top: 2px solid #555;
+    transform: rotate(-135deg);
+    transition: 0.4s transform;
+    
+}
+.accordion>section {
+    overflow: hidden;
+    height: 0;
+    transition: all 1s;
+}
+.accordion>.accordion-toggle:checked~label:after {
+    transform: rotate(45deg);
+    top: 16px;
+}
+.accordion+.gallary>.accordion-toggle:checked~section{
+    height: 300px;
+}
+.accordion+.prof>.accordion-toggle:checked~section {
+    height: 250px;
+}
+.accordion>.accordion-toggle:checked~section {
+    height: 60px;
+}
+.accordion>section p {
+    margin: 15px 0;
+    padding: 0 20px;
+}
+.flex{
+    display: flex;
+    column-gap: 50px;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.flex div{
+    display: flex;          /* Включаем Flexbox */
+    align-items: center;    /* Центрируем по вертикали */
+    justify-content: center; /* Центрируем по горизонтали (опционально) */
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+}
+.flex img{
+    padding-top: 50px;
+    width: 150px;
+    height: 200px;
+    order: 0;
+}
+.rounded {
+counter-reset: li; 
+list-style: none; 
+font: 14px "Trebuchet MS", "Lucida Sans";
+padding: 0;
+text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.rounded a {
+position: relative;
+display: block;
+padding: .4em .4em .4em 2em;
+margin: .5em 50px;
+background: rgba(0, 75, 168, 0.5);
+color: #444;
+text-decoration: none;
+border-radius: .3em;
+transition: .3s ease-out;
+}
+.rounded a:hover {background: #E9E4E0;}
+.rounded a:hover:before {transform: rotate(360deg);}
+.rounded a:before {
+content: counter(li);
+counter-increment: li;
+position: absolute;
+left: -1.3em;
+top: 50%;
+margin-top: -1.3em;
+background: rgb(236, 235, 236);
+height: 2em;
+width: 2em;
+line-height: 2em;
+border: .3em solid white;
+text-align: center;
+font-weight: bold;
+border-radius: 2em;
+transition: all .3s ease-out;
+}

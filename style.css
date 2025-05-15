@@ -1,37 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 /* Общие стили */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    background-image:  url(back2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: 'Playfair Display';
+    /* font-family: Arial, sans-serif;
+    font-family: 'Playfair Display'; */
+    font-family: "Play", sans-serif;
+    font-style: normal;
+    background-image: radial-gradient(at 89.248705795995% 35.76833406563916%, 
+    hsla(213.21428571428572, 100%, 32.94117647058823%, 1) 0%, hsla(213.21428571428572, 100%, 32.94117647058823%, 0) 100%), 
+    radial-gradient(at 78.72990138797755% 27.776894588282907%, hsla(208.00000000000003, 48.3870967741936%, 93.92156862745098%, 1) 0%, 
+    hsla(208.00000000000003, 48.3870967741936%, 93.92156862745098%, 0) 100%), radial-gradient(at 57.86697978638298% 12.202524127820102%, 
+    hsla(213.21428571428572, 100%, 32.94117647058823%, 1) 0%, hsla(213.21428571428572, 100%, 32.94117647058823%, 0) 100%), 
+    radial-gradient(at 37.55767001434571% 89.89290332883195%, hsla(208.00000000000003, 48.3870967741936%, 93.92156862745098%, 1) 0%, 
+    hsla(208.00000000000003, 48.3870967741936%, 93.92156862745098%, 0) 100%), radial-gradient(at 21.287778715089324% 98.83406412479248%, 
+    hsla(213.21428571428572, 100%, 32.94117647058823%, 1) 0%, hsla(213.21428571428572, 100%, 32.94117647058823%, 0) 100%), radial-gradient(at 23.40283495286726% 55.98758314363046%, 
+    hsla(208.00000000000003, 48.3870967741936%, 93.92156862745098%, 1) 0%, hsla(208.00000000000003, 48.3870967741936%, 93.92156862745098%, 0) 100%), 
+    radial-gradient(at 71.00175825595373% 41.97921606805816%, hsla(213.21428571428572, 100%, 32.94117647058823%, 1) 0%, 
+    hsla(213.21428571428572, 100%, 32.94117647058823%, 0) 100%), 
+    radial-gradient(at 60.60071701123817% 22.123156825525626%, 
+    hsla(208.00000000000003, 48.3870967741936%, 93.92156862745098%, 1) 0%, 
+    hsla(208.00000000000003, 48.3870967741936%, 93.92156862745098%, 0) 100%);
 }
 
 /* Стили для header */
 header {
-    background-color: rgba(0, 75, 168, 0.8); 
-    color: white;
-    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #004ba8; 
+    color: #e8f0f7;
+    padding: 30px 10px;
     width: 100%;     /* Растягивает header на всю ширину экрана */
     position: fixed; /* Фиксирует header на экране */
     top: 0;          /* Прижимает header к верхней части экрана */
     left: 0;         /* Прижимает header к левой части экрана */
     z-index: 1000;   /* Убедитесь, что header находится поверх других элементов */
+    border-bottom: #e8f0f7 1px solid;
 }
 
 /* Стили для основного контента */
 main {
     flex: 1;
     flex-direction: column;
-    padding-top: 80px;
     padding-bottom: 105px;
 }
 /* Стили для footer */
@@ -42,18 +55,61 @@ footer {
     bottom: 0;
     padding: 10px 20px;
 }
-.container {
+.brutal-gradient {
+    background:
+    /* Базовый градиент */
+    linear-gradient(115deg, #f5f7fa 0%, #e4e8eb 50%, #c3cfe2 100%),
+    
+    /* Геометрический паттерн */
+    repeating-linear-gradient(45deg,
+    rgba(255,255,255,0.8) 5px,
+    rgba(255,255,255,0.8) 20px,
+    transparent 20px,
+    transparent 40px
+    ),
+    repeating-linear-gradient(
+        -45deg,
+        rgba(0,0,0,0.03) 0px,
+        rgba(0,0,0,0.03) 10px,
+        transparent 10px,
+        transparent 30px
+    );
+    background-blend-mode: multiply;
+    background-color: rgba(231, 240, 247, 1);
+}
+.brutal-gradient:hover {
+    background-position: 0 0, 0 100px, 50px 0;
+    transition: all 0.5s ease;
+}
+.container{
+    width: 80%;
+    min-height: 80vh;
+    max-width: 1800px;
+    margin: auto;
+    margin-top: 5% ;
+}
+.header {
     display: flex;
+    width: 100%;
+    max-width: 1800px;
     justify-content: space-between;
     align-items: center;
-    padding: 0 175px;
-    
+
 }
-.container a{
+.header a{
     text-decoration: none;
+    background-image: linear-gradient(#e8f0f7, #e8f0f7);
+    padding-bottom: 5px;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .3s;
 }
-.container a:visited{
+.header a:visited{
     color: #fff;
+}
+.header a:hover{
+    background-size: 100% 2px;
 }
 .logo{
     height: 45px;
@@ -66,11 +122,14 @@ footer {
     list-style: none;
 }
 .ContainerMainPage{
-    width: 100%;
-	height: 880px;
+    padding: 0 10%;
+    min-height: 85vh;
+    max-width: 1800px;
+    margin: auto;
+    margin-top: 115px;
 	display: flex;
     color: rgb(0, 0, 0);
-    
+    border-bottom: #e8f0f7 1px solid;
 }
 .motto{
     display: flex;
@@ -80,24 +139,26 @@ footer {
 	flex-flow: column;
     justify-content: center; /* Центрирование по горизонтали */
     align-items: center;
-    padding-bottom: 200px;
+    margin-bottom: 200px;
 }
 .MottoText{
     font-size: 35px;
-    
     width: 50%;
-    padding-left: 140px;
+    width: 80%;
+    text-align: left;
+    padding-left: 3%;
+    /* padding-left: 140px; */
 }
 .MottoTextBottom{
     font-size: 35px;
-    
     padding-top: 80px;
-    padding-left: 370px;
+    padding-left: 40%;
 }
 .MottoHeader{
+    color: rgb(30, 48, 211);
+    padding-top: 20%;
+    padding-right: 20%;
     font-size: 35px;
-    
-
 }
 .images{
     position: relative;
@@ -126,7 +187,7 @@ footer {
 
 .Element5{
     left: 760px;
-    top: 10px;
+    top: -20px;
     width: 370px;
     height: 336px;
 }
@@ -152,13 +213,14 @@ footer {
     color: rgb(0, 0, 0);
 }
 .ContainerWays div{
-    width: 40%;
+    width: 45%;
     height: 50%;
     display: flex;          /* Включаем Flexbox */
     align-items: center;    /* Центрируем по вертикали */
     justify-content: center; /* Центрируем по горизонтали (опционально) */
     text-align: center;
     margin: 10px;
+    
 }
 .WaysHeader{
     width: 100%;
@@ -179,9 +241,10 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: rgba(192, 189, 189, 0.7);
-    background-image: linear-gradient(45deg, rgb(40, 75, 168, 0.9), rgb(235, 235, 235, 0.5) 30%);
-    border-radius: 100px;    /* Скругление углов */
+    background-color: #e8f0f7;
+    opacity: 0.7;
+    border-radius: 100px; 
+    
 }
 .WaysText{
     font-size: 15px;
@@ -192,7 +255,7 @@ footer {
 .FourWay > .WaysHeader,
 .FifthWay > .WaysHeader,
 .SixthWay > .WaysHeader {
-    width: 100%;
+    width: 80%;
     height: 10%;
     text-align: center;
 }
@@ -202,10 +265,13 @@ footer {
     order: 1;
     
 }
+.WaysText, .WaysButton{
+    padding-bottom: 5%;
+}
 .WaysButton button{
     width: 200px;           /* Ширина кнопки */
     height: 67.5px;          /* Высота кнопки */
-    border-radius: 50px;
+    /* border-radius: 50px; */
     border: none;
     background-color: rgb(235, 235, 235);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
@@ -213,7 +279,7 @@ footer {
 }
 
 .animated-gradient-button {
-    background: linear-gradient(45deg, rgb(235, 235, 235, 0.5), rgb(40, 75, 168, 0.9)); /* Начальный градиент */
+    background: linear-gradient(45deg, rgb(235, 235, 235, 0.5), #284ba8e6); /* Начальный градиент */
     background-size: 400% 400%;; /* Увеличиваем размер градиента для анимации */
     cursor: pointer;
     transition: background 0.5s ease;
@@ -242,6 +308,7 @@ footer {
     border-right: 1px solid lightgray;
     border-radius: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
     margin-bottom: 50px;
     width: 85%;
     margin-left: auto;
@@ -264,7 +331,7 @@ footer {
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
     background: #ecebec;
-    color: #555;
+    color: black;
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
@@ -306,6 +373,7 @@ footer {
 .accordion>section p {
     margin: 15px 0;
     padding: 0 20px;
+    color: black;
 }
 .flex{
     display: flex;
@@ -341,7 +409,7 @@ display: block;
 padding: .4em .4em .4em 2em;
 margin: .5em 50px;
 background: rgba(0, 75, 168, 0.5);
-color: #444;
+color: black;
 text-decoration: none;
 border-radius: .3em;
 transition: .3s ease-out;
@@ -364,4 +432,7 @@ text-align: center;
 font-weight: bold;
 border-radius: 2em;
 transition: all .3s ease-out;
+}
+footer{
+    border-top: #e8f0f7 1px solid;
 }

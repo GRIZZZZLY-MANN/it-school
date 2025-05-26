@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobilestyle.css">
     <title>Разработка программного обеспечения информационных систем</title>
 </head>
 <header>
   <div class="header">
-    <a href="index.html"><img class="logo" src="ksu-logo (1)1.png"></a>
+    <a href="index.html"><img class="logo" src="ksu.png"></a>
     <ul class="item">
       <li><a href="https://kosgos.ru/" target="_blank">Сайт КГУ</a></li>
       <li><a href="https://sdo.kosgos.ru/" target="_blank">СДО КГУ</a></li>
@@ -17,61 +18,161 @@
   </div>
   </header>
 <body>
-  <div class="container">
+  <div class="container way">
     <main>
-      <div class="accordion ">
-        <input id="toggle1" type="radio" class="accordion-toggle" name="toggle" />
-        <label for="toggle1">Какие навыки и знания нужны для этой деятельности?</label>
-        <section>
-          <p>Умение работать в команде, упорство, самодисциплина, аналитический склад ума и критическое мышление, алгоритмизированный подход, системный подход, знания в области математики, алгоритмизации, программирования.</p>
-        </section>
-      </div>
-      <div class="accordion prof">
-        <input id="toggle2" type="radio" class="accordion-toggle" name="toggle" />
-        <label for="toggle2">Кем работать?</label>
-        <section>
-          <ol class="rounded">
-            <li><a href="">front-end разработчик</a></li>
-            <li><a href="">back-end разработчик</a></li>
-            <li><a href="">мобильный разработчик</a></li>
-            <li><a href="">разработчик баз данных</a></li>
-            <li><a href="">разработчик игр</a></li>
-            <li><a href="">тестировщик</a></li>
-            <li><a href="">системный аналитик</a></li>
-            <li><a href="">аналитик данных</a></li>
-          </ol>
-        </section>
-        
-      </div>
-      <div class="accordion">
-        <input id="toggle3" type="radio" class="accordion-toggle" name="toggle" />
-        <label for="toggle3">Где работать?</label>
-        <section>
-          <p>Работу можно найти во многих компаниях в отделах разработки, тестирования, аналитики во всех сферах деятельности и промышленного производства</p>
-        </section>
-      </div>
-      <div class="accordion gallary">
-        <input id="toggle4" type="radio" class="accordion-toggle" name="toggle" />
-        <label for="toggle4">Преподавательский состав</label>
-        <section class="flex">
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a target="_blank">></a></li>
+          <li><a href="" target="_self">Разработка программного обеспечения информационных систем</a></li>
+        </ul>
+      </nav>
+      <div class="demo">
+        <input type="checkbox" id="hd-1" class="hide"/>
+        <label for="hd-1" >Какие навыки и знания нужны для этой деятельности?</label>
+        <div>
+          Умение работать в команде, упорство, самодисциплина, аналитический склад ума и критическое мышление, алгоритмизированный подход, системный подход, знания в области математики, алгоритмизации, программирования.
+        </div>
+        <br/>
+        <br/>
+        <input type="checkbox" id="hd-2" class="hide"/>
+        <label for="hd-2">Кем работать?</label>
+        <div>
+          <section>
+            <ol class="rounded">
+              <li><a href="">front-end разработчик</a></li>
+              <li><a href="">back-end разработчик</a></li>
+              <li><a href="">мобильный разработчик</a></li>
+              <li><a href="">разработчик баз данных</a></li>
+              <li><a href="">разработчик игр</a></li>
+              <li><a href="">тестировщик</a></li>
+              <li><a href="">системный аналитик</a></li>
+              <li><a href="">аналитик данных</a></li>
+            </ol>
+          </section>
+        </div>
+        <br/>
+        <br/>
+        <input type="checkbox" id="hd-3" class="hide"/>
+        <label for="hd-3" >Где работать?</label>
+        <div>
+          Работу можно найти во многих компаниях в отделах разработки, тестирования, аналитики во всех сферах деятельности и промышленного производства
+        </div>
+        <br/>
+        <br/>
+        <input type="checkbox" id="hd-4" class="hide"/>
+        <label for="hd-4" >Изучаемые дисциплины</label>
+        <div>
+          <input type="checkbox" id="in-1" class="hide"/>
+          <label for="in-1" >Высшая математика и естественные науки</label>
           <div>
-            <img src="89q-8mvVA38.jpg" alt="1 препод">
-            <p>ФИО1</p>
+            <section>
+              <ol class="rounded">
+                <li><a href="">Линейная алгебра</a></li>
+                <li><a href="">Математический анализ</a></li>
+                <li><a href="">Теория вероятностей и математическая статистика</a></li>
+                <li><a href="">Прикладная математика</a></li>
+                <li><a href="">Численные методы</a></li>
+                <li><a href="">Естественно-научная картина мира</a></li>
+              </ol>
+            </section>
           </div>
+          <br/>
+          <br/>
+          <input type="checkbox" id="in-2" class="hide"/>
+          <label for="in-2" >Информатика и информационные технологии</label>
           <div>
-            <img src="89q-8mvVA38.jpg" alt="2 препод">
-            <p>ФИО2</p>
+            <section>
+              <ol class="rounded">
+                <li><a href="">Теоретические основы информатики</a></li>
+                <li><a href="">Алгоритмы и структуры данных</a></li>
+                <li><a href="">Информационные технологии</a></li>
+                <li><a href="">Основы вычислительной техники</a></li>
+                <li><a href="">Моделирование процессов и систем</a></li>
+                <li><a href="">Общая теория систем и системный анализ</a></li>
+                <li><a href="">Технологии обработки данных</a></li>
+                <li><a href="">Архитектура ЭВМ</a></li>
+              </ol>
+            </section>
           </div>
+          <br/>
+          <br/>
+          <input type="checkbox" id="in-3" class="hide"/>
+          <label for="in-3" >Алгоритмизация и программирование</label>
           <div>
-            <img src="89q-8mvVA38.jpg" alt="3 препод">
-            <p>ФИО3</p>
+            <section>
+              <ol class="rounded">
+                <li><a href="">Алгоритмизация и программирование</a></li>
+                <li><a href="">Объектно-ориентированное программирование</a></li>
+                <li><a href="">Программирование на языках высокого уровня</a></li>
+                <li><a href="">Web-программирование</a></li>
+              </ol>
+            </section>
           </div>
+          <br/>
+          <br/>
+          <input type="checkbox" id="in-4" class="hide"/>
+          <label for="in-4" >Разработка информационных систем</label>
           <div>
-            <img src="89q-8mvVA38.jpg" alt="4 препод">
-            <p>ФИО4</p>
+            <section>
+              <ol class="rounded">
+                <li><a href="">Технологии разработки программного обеспечения</a></li>
+                <li><a href="">Тестирование информационных систем</a></li>
+                <li><a href="">Методы и средства проектирования информационных систем</a></li>
+                <li><a href="">Разработка мобильных приложений</a></li>
+                <li><a href="">Технологии компьютерного зрения</a></li>
+                <li><a href="">Интеллектуальные информационные системы</a></li>
+                <li><a href="">Базы данных</a></li>
+                <li><a href="">Информационная безопасность</a></li>
+                <li><a href="">Инфокоммуникационные системы и сети</a></li>
+                <li><a href="">Операционные системы</a></li>
+              </ol>
+            </section>
           </div>
-        </section>
-      </div>
+          <br/>
+          <br/>
+          <input type="checkbox" id="in-5" class="hide"/>
+          <label for="in-5" >Менеджмент в сфере информационных технологий</label>
+          <div>
+            <section>
+              <ol class="rounded">
+                <li><a href="">Управление проектами в сфере информационных технологий</a></li>
+                <li><a href="">Основы информатизации предприятий</a></li>
+                <li><a href="">Бизнес-планирование проектов в сфере информационных технологий</a></li>
+                <li><a href="">Системы управления знаниями</a></li>
+                <li><a href="">Правовое регулирование в сфере информационных технологий</a></li>
+                <li><a href="">Стандартизация и сертификация программно-аппаратных средств</a></li>
+              </ol>
+            </section>
+          </div>
+          <br/>
+          <br/>
+        </div>
+        <br/>
+        <br/>
+        <input type="checkbox" id="hd-5" class="hide"/>
+        <label for="hd-5">Преподавательский состав</label>
+        <div>
+          <section class="flex">
+            <div>
+              <img src="89q-8mvVA38.jpg" alt="1 препод">
+              <p>ФИО1</p>
+            </div>
+            <div>
+              <img src="89q-8mvVA38.jpg" alt="2 препод">
+              <p>ФИО2</p>
+            </div>
+            <div>
+              <img src="89q-8mvVA38.jpg" alt="3 препод">
+              <p>ФИО3</p>
+            </div>
+            <div>
+              <img src="89q-8mvVA38.jpg" alt="4 препод">
+              <p>ФИО4</p>
+            </div>
+          </section>
+        </div>
+    </div>
     </main>
   </div>
       <!-- Footer -->

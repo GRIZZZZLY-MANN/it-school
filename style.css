@@ -10,7 +10,7 @@ body {
     font-family: 'Playfair Display'; */
     font-family: "Play", sans-serif;
     font-style: normal;
-    background-image: radial-gradient(at 89.248705795995% 35.76833406563916%, 
+    /* background-image: radial-gradient(at 89.248705795995% 35.76833406563916%, 
     hsla(213.21428571428572, 100%, 32.94117647058823%, 1) 0%, hsla(213.21428571428572, 100%, 32.94117647058823%, 0) 100%), 
     radial-gradient(at 78.72990138797755% 27.776894588282907%, hsla(208.00000000000003, 48.3870967741936%, 93.92156862745098%, 1) 0%, 
     hsla(208.00000000000003, 48.3870967741936%, 93.92156862745098%, 0) 100%), radial-gradient(at 57.86697978638298% 12.202524127820102%, 
@@ -23,34 +23,32 @@ body {
     hsla(213.21428571428572, 100%, 32.94117647058823%, 0) 100%), 
     radial-gradient(at 60.60071701123817% 22.123156825525626%, 
     hsla(208.00000000000003, 48.3870967741936%, 93.92156862745098%, 1) 0%, 
-    hsla(208.00000000000003, 48.3870967741936%, 93.92156862745098%, 0) 100%);
+    hsla(208.00000000000003, 48.3870967741936%, 93.92156862745098%, 0) 100%); */
 }
 
-/* Стили для header */
 header {
     display: flex;
     justify-content: center;
-    background-color: #004ba8; 
-    color: #e8f0f7;
-    padding: 30px 10px;
-    width: 100%;     /* Растягивает header на всю ширину экрана */
+    background-color: #e7f0f7;
+    /* background-color: #004ba8;  */
+    /* color: #e8f0f7; */
+    padding: 3vh 1vw;
+    width: 100vw;     /* Растягивает header на всю ширину экрана */
     position: fixed; /* Фиксирует header на экране */
     top: 0;          /* Прижимает header к верхней части экрана */
-    left: 0;         /* Прижимает header к левой части экрана */
     z-index: 1000;   /* Убедитесь, что header находится поверх других элементов */
-    border-bottom: #e8f0f7 1px solid;
+    border-bottom: white 1px solid;
 }
 
-/* Стили для основного контента */
 main {
     flex: 1;
     flex-direction: column;
     padding-bottom: 105px;
 }
-/* Стили для footer */
+
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #e7f0f7;
+    color: #1e30d3;
     text-align: center;
     bottom: 0;
     padding: 10px 20px;
@@ -58,7 +56,7 @@ footer {
 .brutal-gradient {
     background:
     /* Базовый градиент */
-    linear-gradient(115deg, #f5f7fa 0%, #e4e8eb 50%, #c3cfe2 100%),
+    linear-gradient(#e7f0f7 0%, #e7f0f7 50%, #e7f0f7 100%),
     
     /* Геометрический паттерн */
     repeating-linear-gradient(45deg,
@@ -75,7 +73,6 @@ footer {
         transparent 30px
     );
     background-blend-mode: multiply;
-    background-color: rgba(231, 240, 247, 1);
 }
 .brutal-gradient:hover {
     background-position: 0 0, 0 100px, 50px 0;
@@ -86,27 +83,32 @@ footer {
     min-height: 80vh;
     max-width: 1800px;
     margin: auto;
-    margin-top: 5% ;
+    margin-top: 5vh;
+}
+.container.way{
+    width: 60%;
+    min-height: 82.4vh;
+    margin-top: 10vh;
 }
 .header {
     display: flex;
-    width: 100%;
+    width: 100vw;
     max-width: 1800px;
     justify-content: space-between;
     align-items: center;
-
+    padding: 0vh 5vw;
 }
 .header a{
     text-decoration: none;
-    background-image: linear-gradient(#e8f0f7, #e8f0f7);
-    padding-bottom: 5px;
+    background-image: linear-gradient(#1e30d3, #1e30d3);
+    padding-bottom: 0.5vh;
     background-position: 0% 100%;
     background-repeat: no-repeat;
-    background-size: 0% 1px;
+    background-size: 0% 0.3vh;
     transition: background-size .3s;
 }
 .header a:visited{
-    color: #fff;
+    color: #1e30d3;
 }
 .header a:hover{
     background-size: 100% 2px;
@@ -117,19 +119,48 @@ footer {
 }
 .item {
     display: flex;
-    column-gap: 100px;
+    column-gap: 5vw;
     color: white;
     list-style: none;
+}
+nav{
+    display: flex;
+    margin-top: 3vh;
+
+}
+nav ul{
+    display: flex;
+    column-gap: 2vw;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 0;
+}
+nav a{
+    text-decoration: none;
+    background-image: linear-gradient(#1e30d3, #1e30d3);
+    padding-bottom: 0.5vh;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 0.3vh;
+    transition: background-size .3s;
+    color: #1e30d3;
+}
+nav a:hover{
+    background-size: 100% 2px;
+}
+nav a:visited{
+    color: #1e30d3;
 }
 .ContainerMainPage{
     padding: 0 10%;
     min-height: 85vh;
     max-width: 1800px;
     margin: auto;
-    margin-top: 115px;
+    margin-top: 115px; /*  сделать тут такую же формулу как в header */
 	display: flex;
     color: rgb(0, 0, 0);
-    border-bottom: #e8f0f7 1px solid;
+    border-bottom: #e8f0f7 0.3vh solid;
 }
 .motto{
     display: flex;
@@ -137,70 +168,58 @@ footer {
     height: auto;
     text-align: center;
 	flex-flow: column;
-    justify-content: center; /* Центрирование по горизонтали */
+    justify-content: center; 
     align-items: center;
-    margin-bottom: 200px;
+    margin-bottom: 20vh;
 }
 .MottoText{
-    font-size: 35px;
-    width: 50%;
-    width: 80%;
+    font-size: 3rem;
+    width: 90%;
     text-align: left;
-    padding-left: 3%;
+    padding-left: 9vw;
     /* padding-left: 140px; */
 }
 .MottoTextBottom{
     font-size: 35px;
-    padding-top: 80px;
+    padding-top: 11.5vh;
     padding-left: 40%;
 }
 .MottoHeader{
     color: rgb(30, 48, 211);
-    padding-top: 20%;
-    padding-right: 20%;
-    font-size: 35px;
+    padding-top: 15vh;
+    padding-right: 5vw;
+    font-size: 4rem;
 }
 .images{
     position: relative;
+    pointer-events: none;
     list-style: none;
-    bottom: 200px;
-    right: 500px;
-}
-.Element1, .Element2, .Element5{
-    position: absolute;
+    bottom: 23vh;
+    right: 27vw;
 }
 .Element1, .Element2{
+    position: absolute;
     rotate: 180deg;
-    
 }
 .Element1{
     top: 0;
     left: 0;
-    z-index: 1;
-    width: 205px;
-    height: 339px;
+    z-index: 3;
+    width: 12vw;
+    height: 40.5vh;
 }
 .Element2{
-    width: 370px;
-    height: 336px;
-}
-
-.Element5{
-    left: 760px;
-    top: -20px;
-    width: 370px;
-    height: 336px;
+    width: 22vw;
+    height: 40.5vh;
 }
 .ceo{
     display: flex;
     width: 30%;
-    height: auto;
-    justify-content: center; /* Центрирование по горизонтали */
     align-items: end;
 }
 .CeoPhoto{
-    height: auto;
-    width: auto;
+    width: 30vw;
+    height: 80vh;
 }
 .ContainerWays{
     display: flex;
@@ -227,10 +246,13 @@ footer {
     font-weight: bold;
     font-size: 16px;
 }
-.ContainerWays > .ContainerWaysHeader{
+.ContainerWaysHeader{
     width: 100%;
     height: 5%;
     text-align: center;
+}
+.ContainerWaysHeader p{
+    font-size: 1.5rem;
 }
 .FirstWay,
 .SecondWay,
@@ -241,8 +263,8 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #e8f0f7;
-    opacity: 0.7;
+    background-color: #e7f0f7;
+    /* opacity: 0.7; */
     border-radius: 100px; 
     
 }
@@ -273,107 +295,81 @@ footer {
     height: 67.5px;          /* Высота кнопки */
     /* border-radius: 50px; */
     border: none;
-    background-color: rgb(235, 235, 235);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
-    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.9em;
+    background-color: #1e30d3;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
+    /* background-color: rgb(235, 235, 235);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+    text-decoration: none; 
+}
+.WaysButton button:hover{
+    background-color: #0f20b9;
+    background-image: none;
 }
 
-.animated-gradient-button {
-    background: linear-gradient(45deg, rgb(235, 235, 235, 0.5), #284ba8e6); /* Начальный градиент */
-    background-size: 400% 400%;; /* Увеличиваем размер градиента для анимации */
-    cursor: pointer;
-    transition: background 0.5s ease;
-}
-/* Анимация градиента */
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
 .WaysLogo{
     width: 100px;
     height: 100px;
 }
-.accordion {
-    transform: translateZ(0);
-    background: white;
-    border-bottom: 1px solid lightgray;
-    border-left: 1px solid lightgray;
-    border-right: 1px solid lightgray;
-    border-radius: 50px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-}
+/* скрываем чекбоксы и блоки с содержанием */
+.hide {
+    display: none; 
 
-.accordion>.accordion-toggle {
+}
+.hide + label ~ div{
     display: none;
-    position: absolute;
-    opacity: 0;
-    border-radius: 50px;
+    border-radius: 2vh;
 }
-
-.accordion>label {
+.hide + label:before {
+    color: #1e30d3;
+    content: "\002B";
     display: block;
-    position: relative;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 20px;
-    border-top: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
-    background: #ecebec;
-    color: black;
-    font-size: 15px;
+    float: right;
+    font-size: 1.5rem; 
     font-weight: bold;
-    cursor: pointer;
-    border-radius: 50px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 16px;
+    line-height: 16px;
+    margin: 3px 5px;
+    text-align: center;
+    width: 16px;
 }
-
-.accordion>label:after {
-    content: '';
-    position: absolute;
-    top: 12px;
-    right: 20px;
-    width: 12px;
-    height: 12px;
-    border-left: 2px solid #555;
-    border-top: 2px solid #555;
-    transform: rotate(-135deg);
-    transition: 0.4s transform;
+.hide:checked + label:before {
+    content: "\2212";
+    color: black;
+    transition: 0.8s ease-in-out;
+}
+/* оформляем текст label */
+.hide + label {
+    width: 100%;
+    border-bottom: 0.3vh solid #1e30d3;
+    color: #1e30d3;
+    padding: 0 0 2vh 0;
+    cursor: pointer;
+    display: inline-block; 
+    transition: 0.8s ease-in-out;
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: black;
+    border-bottom: 0;
     
 }
-.accordion>section {
-    overflow: hidden;
-    height: 0;
-    transition: all 1s;
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block; 
+    background: #e7f0f7;
+    padding: 1%; 
+    font-size: 1rem;
 }
-.accordion>.accordion-toggle:checked~label:after {
-    transform: rotate(45deg);
-    top: 16px;
-}
-.accordion+.gallary>.accordion-toggle:checked~section{
-    height: 300px;
-}
-.accordion+.prof>.accordion-toggle:checked~section {
-    height: 250px;
-}
-.accordion>.accordion-toggle:checked~section {
-    height: 60px;
-}
-.accordion>section p {
-    margin: 15px 0;
-    padding: 0 20px;
-    color: black;
+
+/* demo контейнер */
+.demo {
+    font-size: 1.5rem;
+    margin: 5vh 0;
 }
 .flex{
     display: flex;
@@ -399,26 +395,30 @@ footer {
 .rounded {
 counter-reset: li; 
 list-style: none; 
-font: 14px "Trebuchet MS", "Lucida Sans";
 padding: 0;
 text-shadow: 0 1px 0 rgba(255,255,255,.5);
 }
 .rounded a {
+    
 position: relative;
 display: block;
 padding: .4em .4em .4em 2em;
 margin: .5em 50px;
-background: rgba(0, 75, 168, 0.5);
+background: #E9E4E0;
 color: black;
 text-decoration: none;
 border-radius: .3em;
 transition: .3s ease-out;
 }
-.rounded a:hover {background: #E9E4E0;}
-.rounded a:hover:before {transform: rotate(360deg);}
+.rounded a:hover {
+    background: #E9E4E0;
+}
+.rounded a:hover:before {
+    transform: rotate(360deg);
+}
 .rounded a:before {
 content: counter(li);
-counter-increment: li;
+counter-increment: li; 
 position: absolute;
 left: -1.3em;
 top: 50%;

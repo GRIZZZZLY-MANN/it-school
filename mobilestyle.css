@@ -1,6 +1,7 @@
-@media screen and (min-width: 400px) and (max-width: 991px) {
+@media screen and (min-width: 50px) and (max-width: 991px) {
   header{
-    width: calc(400px + 5vw);
+    width: 100vw;
+    height: 8vh;
     display: flex;
     padding: 0 0;
   }
@@ -21,10 +22,6 @@
   .container.way {
     width: 80%;
     margin-top: 10vh;
-  }
-  .demo {
-    font-size: 1.5rem;
-    margin: 0 0 5vh 0;
   }
   .ContainerUpper {
     margin-top: 71px;
@@ -73,7 +70,7 @@
     display: flex;
     width: 100%;
     height: auto;
-    align-items: center;    /* Центрируем по вертикали */
+    align-items: center;    
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -82,9 +79,9 @@
   .ContainerWays div{
     width: 100%;
     height: 25%;
-    display: flex;          /* Включаем Flexbox */
-    align-items: center;    /* Центрируем по вертикали */
-    justify-content: center; /* Центрируем по горизонтали (опционально) */
+    display: flex;         
+    align-items: center;    
+    justify-content: center; 
     text-align: center;
     margin: 10px;
   }
@@ -109,7 +106,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #e7f0f7;
-    border-radius: 50px;    /* Скругление углов */
+    border-radius: 50px;
   }
   .FirstWay > .WaysHeader,
   .SecondWay > .WaysHeader,
@@ -121,5 +118,50 @@
     height: 10%;
     text-align: center;
   }
-  
+  .WaysButton button{
+    width: 50vw;
+    height: 10vh;
+  }
+  .demo {
+  font-size: 1.5rem;
+  margin: 0 0 5vh 0;
+  }
+  .footer{
+    display: flex;
+    min-height: 40vh;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+  .footer img{
+    width: 50vw;
+    height: 6vh;
+    order: 0;
+  }
+.footer a img{
+    width: 15vw;
+    height: 6vh;
+    order: 2;
+  }
+  .footer div{
+    width: 100%;
+  }
+  .flex{
+    display: flex;
+    column-gap: 0;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.flex div{
+    display: flex;          /* Включаем Flexbox */
+    align-items: center;    /* Центрируем по вертикали */
+    justify-content: center; /* Центрируем по горизонтали (опционально) */
+    flex-direction: column;
+}
+.flex img{
+    padding-top: 50px;
+    width: 15vw;
+    height: 15vh;
+    order: 0;
+}
 }

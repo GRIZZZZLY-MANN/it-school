@@ -28,10 +28,7 @@ body {
 
 header {
     display: flex;
-    justify-content: center;
     background-color: #e7f0f7;
-    /* background-color: #004ba8;  */
-    /* color: #e8f0f7; */
     padding: 3vh 1vw;
     width: 100vw;     /* Растягивает header на всю ширину экрана */
     position: fixed; /* Фиксирует header на экране */
@@ -53,30 +50,17 @@ footer {
     bottom: 0;
     padding: 10px 20px;
 }
-.brutal-gradient {
-    background:
-    /* Базовый градиент */
-    linear-gradient(#e7f0f7 0%, #e7f0f7 50%, #e7f0f7 100%),
-    
-    /* Геометрический паттерн */
-    repeating-linear-gradient(45deg,
-    rgba(255,255,255,0.8) 5px,
-    rgba(255,255,255,0.8) 20px,
-    transparent 20px,
-    transparent 40px
-    ),
-    repeating-linear-gradient(
-        -45deg,
-        rgba(0,0,0,0.03) 0px,
-        rgba(0,0,0,0.03) 10px,
-        transparent 10px,
-        transparent 30px
-    );
+.gradient {
+    background:linear-gradient(#e7f0f7 0%, #e7f0f7 50%, #e7f0f7 100%),
+    repeating-linear-gradient(45deg, #ffffffcc 5px, 
+    rgba(255,255,255,0.8) 20px, transparent 20px, transparent 40px),
+    repeating-linear-gradient(-45deg,#00000008 0px,
+    rgba(0,0,0,0.03) 10px, transparent 10px, transparent 30px);
     background-blend-mode: multiply;
 }
-.brutal-gradient:hover {
-    background-position: 0 0, 0 100px, 50px 0;
-    transition: all 0.5s ease;
+.gradient:hover {
+    background-position: 0 10vw, 5vw 0;
+    transition: all 0.8s ease;
 }
 .container{
     width: 80%;
@@ -87,12 +71,12 @@ footer {
 }
 .container.way{
     width: 60%;
-    min-height: 82.4vh;
+    min-height: 68vh;
     margin-top: 10vh;
 }
 .header {
     display: flex;
-    width: 100vw;
+    width: 100%;
     max-width: 1800px;
     justify-content: space-between;
     align-items: center;
@@ -111,7 +95,7 @@ footer {
     color: #1e30d3;
 }
 .header a:hover{
-    background-size: 100% 2px;
+    background-size: 100% 0.3vh;
 }
 .logo{
     height: 45px;
@@ -147,7 +131,7 @@ nav a{
     color: #1e30d3;
 }
 nav a:hover{
-    background-size: 100% 2px;
+    background-size: 100% 0.3vh;
 }
 nav a:visited{
     color: #1e30d3;
@@ -166,7 +150,6 @@ nav a:visited{
     display: flex;
     width: 70%;
     height: auto;
-    text-align: center;
 	flex-flow: column;
     justify-content: center; 
     align-items: center;
@@ -177,7 +160,6 @@ nav a:visited{
     width: 90%;
     text-align: left;
     padding-left: 9vw;
-    /* padding-left: 140px; */
 }
 .MottoTextBottom{
     font-size: 35px;
@@ -224,7 +206,7 @@ nav a:visited{
 .ContainerWays{
     display: flex;
     width: 100%;
-    height: 700px;
+    height: 75vh;
     align-items: center;    /* Центрируем по вертикали */
     justify-content: center;
     flex-direction: row;
@@ -266,10 +248,9 @@ nav a:visited{
     background-color: #e7f0f7;
     /* opacity: 0.7; */
     border-radius: 100px; 
-    
 }
 .WaysText{
-    font-size: 15px;
+    font-size: 1rem;
 }
 .FirstWay > .WaysHeader,
 .SecondWay > .WaysHeader,
@@ -284,31 +265,21 @@ nav a:visited{
 .WaysButton{
     display: flex;
     flex-flow: column-reverse;
-    order: 1;
-    
 }
 .WaysText, .WaysButton{
     padding-bottom: 5%;
 }
 .WaysButton button{
-    width: 200px;           /* Ширина кнопки */
-    height: 67.5px;          /* Высота кнопки */
-    /* border-radius: 50px; */
+    width: 10vw;
+    height: 8vh;
     border: none;
     color: #ffffff;
-    font-size: 0.9em;
+    font-size: 1rem;
     background-color: #1e30d3;
-    background-position: center center;
-    border-color: transparent;
-    border-style: solid;
-    transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
-    /* background-color: rgb(235, 235, 235);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
-    text-decoration: none; 
+    cursor: pointer;
 }
 .WaysButton button:hover{
     background-color: #0f20b9;
-    background-image: none;
 }
 
 .WaysLogo{
@@ -356,7 +327,6 @@ nav a:visited{
 .hide:checked + label {
     color: black;
     border-bottom: 0;
-    
 }
 /* когда чекбокс активен показываем блоки с содержанием  */
 .hide:checked + label + div {
@@ -383,8 +353,8 @@ nav a:visited{
     align-items: center;    /* Центрируем по вертикали */
     justify-content: center; /* Центрируем по горизонтали (опционально) */
     flex-direction: column;
-    width: 250px;
-    height: 300px;
+    width: 24vw;
+    height: 30vh;
 }
 .flex img{
     padding-top: 50px;
@@ -436,3 +406,39 @@ transition: all .3s ease-out;
 footer{
     border-top: #e8f0f7 1px solid;
 }
+.footer{
+    margin: auto;
+    width: 80%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+}
+.footer p{
+    order: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer img{
+    width: 15vw;
+    height: 6vh;
+    order: 0;
+}
+.footer a img{
+    width: 3vw;
+    height: 6vh;
+    order: 2;
+}
+.footer div{
+    width: 40%;
+}
+.footer hr{
+    width: 100%;
+    border: solid 0.1vh;
+    margin: 0;
+    padding: 0;
+}
+

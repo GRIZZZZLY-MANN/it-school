@@ -1,8 +1,9 @@
 @media screen and (min-width: 50px) and (max-width: 991px) {
   header{
     width: 100vw;
-    height: 8vh;
+    height: 10vh;
     display: flex;
+    justify-content: center;
     padding: 0 0;
   }
   main{
@@ -24,7 +25,7 @@
     margin-top: 10vh;
   }
   .ContainerUpper {
-    margin-top: 71px;
+    margin-top: 10vh;
     min-height: 87vh;
   }
   .ContainerMainPage{
@@ -64,7 +65,7 @@
   }
   .CeoPhoto{
     height: 55vh;
-    width: 90%;
+    width: 80%;
   }
   .ContainerWays{
     display: flex;
@@ -133,8 +134,8 @@
     justify-content: center;
   }
   .footer img{
-    width: 50vw;
-    height: 6vh;
+    width: 40vw;
+    height: 5vh;
     order: 0;
   }
 .footer a img{
@@ -147,7 +148,7 @@
   }
   .flex{
     display: flex;
-    column-gap: 0;
+    column-gap: 0;  
     flex-direction: row;
     justify-content: center;
     
@@ -157,11 +158,13 @@
     align-items: center;    /* Центрируем по вертикали */
     justify-content: center; /* Центрируем по горизонтали (опционально) */
     flex-direction: column;
-}
+  }
 .flex img{
-    padding-top: 50px;
     width: 15vw;
     height: 15vh;
     order: 0;
-}
+  }
+  .flex p{
+    max-width: 80px;
+  }
 }

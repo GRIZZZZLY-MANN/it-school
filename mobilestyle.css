@@ -65,7 +65,7 @@
   }
   .CeoPhoto{
     height: 55vh;
-    width: 80%;
+    width: 70%;
   }
   .ContainerWays{
     display: flex;
@@ -129,7 +129,7 @@
   }
   .footer{
     display: flex;
-    min-height: 40vh;
+    min-height: 45vh;
     flex-flow: column nowrap;
     justify-content: center;
   }
